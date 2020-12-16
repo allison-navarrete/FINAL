@@ -51,15 +51,18 @@
 
             div {
                 align-content: center;
-                align-self:auto;
+                align-self:baseline;
                 margin-left: auto;
                 margin-right: auto;
-            }
+                float: center;
+                display:block;
+                }
+
             .welcome {
                 text-align: center;
                 bottom: 0;
                 position: relative;
-                padding: 32px;
+                padding: 25px;
             }
 
             /*flexbox - credit: W3Schools*/
@@ -70,6 +73,7 @@
                 flex-wrap: wrap;
                 padding: 0 3px;
                 align-content: center;
+                margin: 30px;
             }
 
             /* creates four equal columns that sit next to each other */
@@ -78,6 +82,7 @@
                 flex: 25%;
                 max-width: 25%;
                 padding: 0 3px;
+                margin: 10px;
             }
 
             .column img {
@@ -147,7 +152,7 @@
                 <div class="column">
                 <!--saturn-->
                     <div class="grid-item" onclick="playSound('clip1')"
-                        onmouseout="stopSound('clip1')"><a href="saturn.html"><img src="img/saturn/saturn.png" alt="saturn" width="400" height="200"></a>
+                        onmouseout="stopSound('clip1')"><a href="saturn.html"><img src="img/saturn/saturn.png" alt="saturn" width="70%"></a>
                     </div>
                     <audio id='clip1' src="audio/robot-blip.mp3"></audio>
                 <!--uranus-->
